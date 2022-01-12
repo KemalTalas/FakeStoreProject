@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="19dp">
+
+
+
+            <RelativeLayout
+                android:id="@+id/search_bar_main"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <SearchView
+                    android:id="@+id/search_view"
+                    style="@style/searchText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:iconifiedByDefault="false"
+                    android:queryBackground="@android:color/transparent"
+                    android:queryHint="@string/search" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3.3dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:weightSum="6">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#27AE60"
+                        android:layout_weight="1"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#2F80ED"
+                        android:layout_weight="1"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#F2994A"
+                        android:layout_weight="1"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#EB5757"
+                        android:layout_weight="1"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#BB6BD9"
+                        android:layout_weight="1"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#56CCF2"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="50dp"
+            app:cardUseCompatPadding="false"
+            android:layout_marginTop="24dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:id="@+id/relativeLayout">
+
+                <ImageView
+                    android:id="@+id/sort_icon_view"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="59dp"
+                    android:layout_marginTop="21dp"
+                    android:src="@drawable/ic_sort"
+                    android:contentDescription="@string/sortButton" />
+
+                <TextView
+                    style="@style/sortAndFilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="89dp"
+                    android:text="@string/sort" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="33dp"
+                    android:layout_centerInParent="true"
+                    android:background="#E1E1E1"/>
+
+                <TextView
+                    style="@style/sortAndFilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="275dp"
+                    android:onClick="showFilter"
+                    android:text="@string/filter" />
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="245dp"
+                    android:layout_marginTop="21dp"
+                    android:src="@drawable/ic_filter"
+                    android:onClick="showFilter"
+                    android:contentDescription="@string/filterButton" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/recyclerViewMain"
+            android:layout_marginTop="30dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@android:color/white"
+        app:itemIconTint="@color/selector_nav_item"
+        app:itemTextColor="@color/selector_nav_item"
+        app:backgroundTint="@color/white"
+        app:menu="@menu/bottom_nav"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBarMain"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

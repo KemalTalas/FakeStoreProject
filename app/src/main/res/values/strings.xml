@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">FakeStoreProject</string>
+
+    <string name="search">Kategori veya ürün ara</string>
+
+    <string name="sort">Sırala</string>
+
+    <string name="filter">Filtre</string>
+
+    <string name="categories">Kategoriler</string>
+
+    <string name="getFilter">Filtrele</string>
+
+    <string name="loginText">Giriş yap</string>
+
+    <string name="loginToAccount">Hesabına Giriş Yap</string>
+
+    <string name="lostPassword">Şifremi Unuttum</string>
+
+    <string name="noAccount">Hesabın yok mu?</string>
+
+    <string name="registerText">Kaydol</string>
+
+    <string name="productImage">Product Image</string>
+
+    <string name="itemName">Item Name</string>
+
+    <string name="itemPrice">Item Price</string>
+
+    <string name="backButton">Back Button</string>
+
+    <string name="logoImage">Logo Image</string>
+
+    <string name="emailAdress">demo@hizligeliyo.com</string>
+
+    <string name="passwordHide">******</string>
+
+    <string name="cancelButton">Cancel Button</string>
+
+    <string name="sortButton">Sort Button</string>
+
+    <string name="filterButton">Filter Button</string>
+
+</resources>

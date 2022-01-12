@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="searchText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/titilium</item>
+        <item name="flow_verticalAlign">top</item>
+        <item name="flow_horizontalAlign">start</item>
+        <item name="textFillColor">#9C9EB9</item>
+    </style>
+
+    <style name="sortAndFilter" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/titilium</item>
+        <item name="flow_verticalAlign">top</item>
+        <item name="flow_horizontalAlign">start</item>
+        <item name="android:textColor">#7E7E7E</item>
+
+    </style>
+
+    <style name="categoriesTextStyle" parent="TextAppearance.AppCompat">
+
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="flow_verticalAlign">top</item>
+        <item name="flow_horizontalAlign">center</item>
+        <item name="android:textColor">#52565C</item>
+
+    </style>
+
+</resources>

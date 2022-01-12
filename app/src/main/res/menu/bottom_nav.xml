@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/nav_dashboard"
+    android:title="Anasayfa"
+    android:icon="@drawable/ic_dashboard"/>
+
+    <item
+        android:id="@+id/nav_categories"
+        android:title="Kategoriler"
+        android:icon="@drawable/ic_categories"/>
+
+    <item android:id="@+id/nav_empty"
+        android:title="Empty"
+        android:icon="@drawable/ic_offer"/>
+
+    <item android:id="@+id/nav_user"
+        android:title="Kullanıcı"
+        android:icon="@drawable/ic_user"/>
+
+</menu>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.UserLoginActivity">
+
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="26dp"
+        android:contentDescription="@string/backButton" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="98dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/logoImage" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="190dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/titilium"
+        android:text="@string/loginToAccount"
+        android:textAlignment="center"
+        android:textColor="#52565C"
+        android:textSize="24sp"
+        app:flow_verticalAlign="top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/loginScreenID"
+        android:layout_width="318dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/input_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:hint="@string/emailAdress"
+        android:gravity="center"
+        android:fontFamily="@font/titilium"
+        android:textSize="16sp"
+        android:textColorHint="#52565C"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/loginScreenPW"
+        android:layout_width="318dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="106dp"
+        android:background="@drawable/input_text"
+        android:fontFamily="@font/titilium"
+        android:gravity="center"
+        android:hint="@string/passwordHide"
+        android:inputType="textPassword"
+        android:autofillHints="password"
+        android:textColorHint="#52565C"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        android:fontFamily="@font/titilium"
+        android:text="@string/lostPassword"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:flow_verticalAlign="top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginScreenPW">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="251dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="95dp"
+        android:background="@drawable/button_style_blue"
+        android:fontFamily="@font/titilium"
+        android:text="@string/loginText"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:flow_verticalAlign="top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginScreenPW" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/titilium"
+        android:text="@string/noAccount"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:flow_verticalAlign="top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="125dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/titilium"
+        android:text="@string/registerText"
+        android:textAlignment="center"
+        android:textColor="#2D9CDB"
+        android:textSize="16sp"
+        app:flow_verticalAlign="top"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#27AE60"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2F80ED"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F2994A"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EB5757"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#BB6BD9"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#56CCF2"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
